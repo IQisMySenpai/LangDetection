@@ -4,8 +4,6 @@
 1. [About The Project](#about-the-project)
    - [Built With](#built-with)
 2. [Examples](#examples)
-   - [Progress Bar Class](#progress-bar-class)
-   - [Advanced Status Window Class](#advanced-status-window-class)
 
 ## About The Project
 
