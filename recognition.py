@@ -62,7 +62,10 @@ class Recognition:
 
                 lang_chars += count * len(word)
 
-            cur_lang.probability = lang_chars/total_chars
+            if total_chars > 0:
+                cur_lang.probability = lang_chars/total_chars
+            else:
+                cur_lang.probability = 0
             score.append(cur_lang)
 
         # for i in range(len(score)):
