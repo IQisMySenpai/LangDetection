@@ -4,6 +4,8 @@
 1. [About The Project](#about-the-project)
    - [Built With](#built-with)
 2. [Examples](#examples)
+   - [Detection](#detection)
+   - [Cleaning up word lists](#cleaning-up-word-lists)
 
 ## About The Project
 
@@ -17,6 +19,7 @@ We needed a language detection which recognizes a language not using ai, but on 
 
 Some examples on how I am using the code.
 
+### Detection
 With for each lang, the name of the text file and if this language has spaces between words.
 
 ```python
@@ -33,7 +36,14 @@ langs = {'arabic': True,
          'turkish': True,
          'ukrainin': True}
 
-rec = Recognition(langs)
+rec = Recognition('example_langs/', langs)
 
-print(rec.detect('Ich mag ganz gerne kekse. Denn Kekse sind sehr lecker'))
+print(rec.detect('This is a Text I would like to recognize'))
+```
+### Cleaning up word lists
+Word lists most be cleaned and lower-cased for good outputs.
+```python
+from recognition import lower_text
+
+lower_text('example_langs/', 'english')
 ```
