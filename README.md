@@ -9,7 +9,7 @@
 
 ## About The Project
 
-We needed a language detection which recognizes a language not using ai, but on the words matched a certain language.
+We needed a language detection which recognizes a language not using ai, but on how many words matched a certain language. We are using the most common words of the languages that we need.
 
 ### Built With
 
